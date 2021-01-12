@@ -1,11 +1,28 @@
-### 注意：新版本（Angular 4 + Angular CLI）已迁移至新repo
+# Angular and TypeScript Hello World Project
 
-https://github.com/angular-programming/angular-hello-world
+The Hello World project is an Angular 2+ starter project that has the npm modules, 
+configuration, scripts and folders and routing in place to make getting started 
+with an Angular project easy!
 
-## Usage
+Here's what is in the project:
 
-- Clone or fork this repository
-- Make sure you have node.js(> 4.0) installed
-- run `npm install` to install dependencies
-- run `npm start` to fire up dev server
-- open browser to http://localhost:3000
+* Angular scripts and TypeScript configuration are ready to go
+* A simple app component 
+* Bootstrap for CSS
+
+This is a very simple "Hello World" project to help get you started.
+
+If you're using VS Code, install my [Angular code snippets](https://blog.codewithdan.com/2017/04/01/angular-2-typescript-and-html-snippets-for-vs-code/) 
+to simplify the process of writing Angular code. The code snippets make it easy
+to build Angular components, services, pipes, directives and more.
+
+
+## Running the Application
+
+1. Install the Angular CLI
+
+    `npm install -g @angular/cli`
+
+1. Run `npm install`
+
+1. Run `ng serve -o`

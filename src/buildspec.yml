@@ -1,0 +1,23 @@
+phases:
+  install:
+    commands:
+      - echo installing nodejs...
+      - apt-get install -y nodejs
+      - echo installing yarn...
+      
+  pre_build:
+    commands:
+      - echo installing dependencies...
+      - npm i -g @angular/cli
+      - npm install
+  build:
+    commands:
+      # - echo testing...
+      # - echo building...
+      - ng build
+artifacts:
+  files:
+    - "**/*"
+  discard-paths: no
+  base-directory: dist/*
+

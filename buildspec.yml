@@ -1,19 +1,22 @@
 version: 0.2
 
+env:
+    variables:
+        BUILD_FOLDER: "dist"
 phases:
   install:
     runtime-versions:
-      nodejs: 12
-        commands:
-            - echo Installing source NPM dependencies...
-            - npm install
-            - npm install -g @angular/cli
+        nodejs: 10
+    commands:
+        - echo Installing source NPM dependencies...
+        - npm install
+        - npm install -g @angular/cli
   build:
     commands:
-            - echo Build started on `date`
-            - ng build
+        - echo Build started 
+        - ng build
 artifacts:
-  files:
-    - "**/*"
-  discard-paths: no
-  base-directory: dist/your-app-name
+    files:
+        - '**/*'
+    base-directory: 'dist*'
+    discard-paths: yes
